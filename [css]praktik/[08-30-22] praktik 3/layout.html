@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Layouting</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+                
+            .header {
+                background-color: #F7567C;
+                font-size: 4vh;
+                color: #FFFAE3;
+                text-align: center;
+                padding: 20px;
+            }
+            .topnav {
+                display: flex;
+                justify-content: space-around;
+                overflow: hidden;
+                background-color: #FFFAE3;
+            }
+            .topnav a {
+                text-decoration: none;
+                color: #5D576B;
+                float: left;
+                display: block;
+                padding: 14px 16px;
+                text-align: center;
+            }
+            .topnav a:hover {
+                color: #fcfcfc;
+                background-color: #5D576B;
+            }
+
+            .column{
+                float: left;
+                padding: 1%;
+            }
+            .column.middle {
+                width: 60%;
+            }
+            .column.side {
+                width: 17%;
+            }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            @media screen and (max-width: 600px){
+                .column {
+                    width: 100%;
+                }
+            }
+
+            .footer {
+                background-color:#F7567C;
+                padding: 15px;
+                text-align: center;
+                color: #fcfcfc;
+            }
+
+            /* FONT STYLE */
+            .justify {
+                text-align: justify;
+            }
+            .big {
+                font-size: 3vh;
+            }
+            .smaller {
+                font-size: 2.5vh;
+            }
+            .small {
+                font-size: 2vh;
+            }
+            .bold {
+                font-weight: bold;
+            }
+            .signika {
+                font-family: 'Signika Negative', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <!-- HEADER -->
+        <div class="header signika bold">
+            BELAJAR JAWA
+        </div>
+
+        <!-- NAVBAR -->
+        <div class="topnav signika bold">
+            <!-- <table>
+                <tr>
+                    <td>
+                        <a href="">Home</a>
+                    </td>
+                    <td>
+                        <a href="">Home</a>
+                    </td>
+                    <td>
+                        <a href="">Home</a>
+                    </td>
+                    <td>
+                        <a href="">Home</a>
+                    </td>
+                </tr>
+            </table> -->
+            <a href="">Home</a>
+            <a href="">News</a>
+            <a href="">Contact</a>
+            <a href="">About</a>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="row signika justify" style="background-color:#e2e2cd">
+            <p class="column side">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio nisi eum nam. Vel quia consectetur praesentium necessitatibus in error et quis repellendus harum ad ducimus eum maxime nesciunt modi neque exercitationem quas a dolor repellat nam, ullam quaerat cupiditate inventore. In, impedit dicta accusantium officia dolores obcaecati dolorem dolorum qui necessitatibus asperiores nostrum, veniam, fuga laudantium dolore commodi a eos. Omnis temporibus maiores neque laborum obcaecati ex ea amet, eum, laudantium eius dolorum architecto corporis nulla. Quaerat porro maxime non esse aut, eum praesentium dicta illum tempore! Nesciunt nobis provident quasi? Ex sed iste nam ipsam ea officiis aspernatur accusamus iusto nesciunt molestias aperiam, dolorem laudantium omnis, adipisci quis voluptas! Voluptatum ullam praesentium velit quas omnis doloribus facilis placeat. Et quia maxime neque reprehenderit magnam debitis reiciendis voluptatem, laboriosam impedit veniam recusandae sit! Cupiditate cum reiciendis expedita minus sit cumque sunt rem ullam! Facere perferendis accusamus cupiditate sed quod porro.</p>
+            <p class="column middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus qui enim sit voluptas, aliquam nemo culpa quod omnis, at aperiam esse ratione ab porro fugiat obcaecati blanditiis? Temporibus esse quo beatae nam quisquam quaerat odio eos, odit placeat. Blanditiis molestias error, neque esse voluptas eos saepe reprehenderit rerum nisi, quaerat impedit earum magnam repudiandae excepturi est doloremque labore at consequatur. Esse id quisquam optio velit delectus, eveniet atque dignissimos est libero, totam amet nihil quaerat neque. Ullam, nam blanditiis? Temporibus ab quidem quam? Minima nobis facere perferendis iste ratione in expedita saepe maxime. Laborum, quaerat. Necessitatibus explicabo maiores mollitia harum recusandae adipisci ad reiciendis quos ipsum, laudantium, in magnam, veritatis autem facilis eius? Tenetur et molestias ad iusto commodi possimus vel dicta natus nesciunt? Libero excepturi beatae nam autem obcaecati at laborum quidem, eligendi ratione earum deleniti quia tenetur iste dolore ipsam, provident fugit dicta mollitia. Perspiciatis sint voluptatibus non voluptate autem delectus dolores accusamus dicta exercitationem, incidunt enim magni deserunt numquam a vitae nulla iure hic molestias error vero amet impedit natus pariatur consequuntur. Nobis, molestias modi, corporis aspernatur eveniet eum magnam quia cumque harum incidunt doloremque, perferendis excepturi praesentium. Nemo, natus! Eos provident expedita neque incidunt, accusantium voluptatibus maxime est illum? Accusamus ea quo harum porro fuga, nam quisquam earum ex quibusdam! Consequatur vero perferendis omnis atque libero natus inventore odit molestiae nobis, minima aperiam dicta esse nemo voluptatibus quo quibusdam enim possimus recusandae qui obcaecati modi ea harum rem magni? Aliquam cumque quae mollitia suscipit minima earum. Illum, aut veritatis. Vero, modi? Soluta recusandae consequuntur, quia quos blanditiis quis omnis! Ducimus dolorem voluptas eveniet nulla sapiente accusantium iste nobis incidunt, officiis a quaerat amet ratione omnis pariatur dicta eaque aliquid doloribus debitis praesentium qui maiores maxime optio! Esse accusantium fuga ea dignissimos aliquam tenetur maiores impedit consequuntur. Amet eos itaque vel esse qui reprehenderit architecto accusamus quam soluta dignissimos, quo enim corporis dolorem est quaerat, cumque eius doloribus repellendus recusandae et iure sed sit. Nihil dolorum provident, libero nemo autem nisi nostrum! Exercitationem sapiente sit repellat libero iusto? Eius recusandae ab sapiente saepe eaque quia sunt, enim ad consequuntur possimus iure delectus sed cum deleniti in, libero, rerum consectetur non tempora. Nemo tempora quis rem unde sint voluptate fugit aliquam, odio accusamus dolore quia. Perferendis, et culpa consequatur nostrum eos quisquam in. Voluptates impedit dolorum ea molestias aspernatur ullam recusandae voluptatem aut dolore ducimus hic eum ipsa quo necessitatibus quos, vel, in tempore, rem commodi nostrum expedita! Nobis, laborum beatae tempore velit, quos distinctio maiores mollitia laudantium pariatur architecto inventore omnis nisi perspiciatis quibusdam voluptatibus fugiat! Voluptatum sunt consectetur neque est deserunt odio maiores ipsum, dolorem nemo distinctio eaque corrupti deleniti ab optio eum eius repellendus fugiat hic vel explicabo debitis cum et quisquam. Quia temporibus in inventore similique, id molestias sapiente! Ipsa excepturi magnam maiores suscipit aspernatur praesentium deleniti optio. Soluta quam officia in ex veritatis est eligendi ipsam cum magni sapiente, tempora beatae laboriosam nulla blanditiis inventore? Magnam error ipsa provident, porro voluptatibus nihil enim facere in, assumenda animi omnis doloremque sit voluptate quos cum iste similique molestias dicta quasi explicabo recusandae necessitatibus voluptas cupiditate sapiente. Autem tempore, blanditiis consectetur possimus officia provident, dolorem nostrum, similique maiores accusantium nihil atque ut corporis quaerat beatae laudantium sapiente fugit facilis exercitationem. Amet cupiditate soluta earum cumque, voluptatem quasi nesciunt fuga, veniam cum blanditiis eaque labore, expedita repellat! Impedit, minus atque odit enim, dignissimos molestiae aperiam corporis eaque, ipsam at minima eos rem veritatis maxime hic labore? Laboriosam, dolore voluptatibus! Vero voluptates impedit, consectetur provident adipisci eos est aperiam laborum temporibus nemo molestiae mollitia non corporis debitis error.</p>
+            <p class="column side">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dolore veniam, sint harum accusamus odio perferendis facilis mollitia corporis unde voluptatum recusandae. Temporibus dolorem, dicta sed fugiat asperiores ipsam corrupti rem. Id cumque molestias non dolore accusantium sit, excepturi veniam quam nemo incidunt voluptate consectetur nisi deleniti veritatis laboriosam, nesciunt doloremque sed. Cupiditate iste pariatur aliquid repudiandae, dolorum dicta, corrupti officiis, labore unde sunt porro fuga rem soluta explicabo numquam nesciunt! Est ut qui quibusdam? Ex accusamus placeat ipsam illum doloremque in numquam mollitia dolorum earum, laudantium iusto ullam soluta quo voluptates, hic, officia fugiat facere a repudiandae asperiores alias distinctio? Unde architecto obcaecati nobis fuga odio aliquid magnam, ex officia quasi? Illum accusamus dolorum deleniti harum odit, sapiente, nulla recusandae fugit quia nobis nostrum commodi porro? Quis, iusto esse, odio asperiores eaque aliquid unde quisquam voluptatem quas harum consectetur eius voluptates voluptas fugit corporis? Tenetur deleniti reprehenderit nobis laudantium.</p>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer signika bold">
+            Copyleft &copy; ruNs_ 2022
+        </div>
+    </body>
+</html>
