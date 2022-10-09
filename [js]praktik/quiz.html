@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Quiz</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>TES NUMERIK</h1><hr>
+        Bagian Pertama
+        <table id="myDynamicTable" width="100%"></table>
+        <script>
+            function addTable() {
+                var myTableDiv = document.getElementById("myDynamicTable");
+
+                var table = document.createElement('TABLE');
+                table.border = '0';
+                table.style = '';
+
+                var tableBody = document.createElement('TBODY');
+                table.appendChild(tableBody);
+
+                for (var i = 0; i < 10; i++) {
+                    var tr = document.createElement('TR');
+                    tableBody.appendChild(tr);
+
+                    for (var j = 0; j < 6; j++) {
+                        var td = document.createElement('TD');
+                        td.width = '100';
+                        if(j % 2 === 0) {
+                            td.appendChild(document.createTextNode("Cell " + i + "," + j));
+                        } else {
+                            td.appendChild(document.createElement('input'));
+                        }
+                        tr.appendChild(td);
+                    }
+                }
+                myTableDiv.appendChild(table);
+            }
+            addTable();
+        </script>
+    </body>
+</html>

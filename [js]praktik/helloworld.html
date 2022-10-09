@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JavaScript</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body onload="plus();">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script>document.write("hello world!")</script>
+        <br/>
+        <p id="test">there's a button:</p><button onmouseenter="document.getElementById('test').innerText = 'ew'">click me!</button>
+        <br/>
+        <br/>
+        <textarea onkeydown="document.getElementById('counter').innerText = this.value.length"></textarea>
+        <p>Jumlah huruf: <span id="counter">0</span> karakter</p>
+    
+        <script>
+            var answer = 0
+            function plus(){
+                document.getElementById("a").innerHTML = Math.floor((Math.random() * 100) + 1);
+                document.getElementById("b").innerHTML = Math.floor((Math.random() * 100) + 1);
+                answer = Number(document.getElementById("a").innerHTML) + Number(document.getElementById("b").innerHTML);
+            }
+        </script>
+
+        <p>Little Quiz</p>
+        <p>What is <span id="a">0</span> + <span id="b">0</span>?</p>
+        <input type="text" id="jawaban"></input>
+
+        <button onclick="
+        if (Number(document.getElementById('jawaban').value) === Number(answer)) {
+            document.getElementById('score').innerHTML = Number(document.getElementById('score').innerHTML) + 1;
+        }
+        document.getElementById('jawaban').value = '';
+        plus();
+        ">submit</button>
+        <p>Score: <span id="score">0</span></p>
+    </body>
+</html>

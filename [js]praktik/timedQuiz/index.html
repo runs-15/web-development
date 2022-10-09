@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Quiz</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- START QUIZ BTN -->
+        <div class="start_btn"><button>Kerjakan</button></div>
+
+        <!-- INFORMASI -->
+        <div class="info_box">
+            <div class="info-title"><span>Aturan kuis</span></div>
+            <div class="info-list">
+                <div class="info">1. Anda hanya memiliki waktu <span>15 detik</span> setiap soal.</div>
+                <div class="info">2. Jawaban tidak bisa diganti setelah dipilih.</div>
+                <div class="info">3. Pilihan akan terkunci saat waktu telah habis</div>
+                <div class="info">4. Anda akan mendapatkan poin berdasarkan skor anda</div>
+            </div>
+            <div class="buttons">
+                <button class="quit">Keluar</button>
+                <button class="restart">Mulai</button>
+            </div>
+        </div>
+
+        <!-- Kotak Kuis -->
+        <div class="quiz_box">
+            <header>
+                <div class="title">Aplikasi Kuis JavaScript</div>
+                <div class="timer">
+                    <div class="timer_txt">Time left</div>
+                    <div class="timer_sec">15</div>
+                </div>
+                <div class="time_line"></div>
+            </header>
+            <section>
+                <div class="question_text"></div>
+                <div class="option_list"></div>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <div class="total_que"></div>
+                <button class="next_btn">Lanjut</button>
+            </footer>
+        </div>
+
+        <!-- Hasil -->
+        <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="completion">Anda telah menyelesaikan kuis!</div>
+            <div class="score_text"></div>
+
+            <div class="buttons">
+                <button class="restart">Ulangi</button>
+                <button class="quit">Keluar</button>
+            </div>
+
+        </div>
+
+        <script src="questions.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
