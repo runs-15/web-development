@@ -69,7 +69,7 @@
 //   // },
 // ];
 
-const URL = 'https://opentdb.com/api.php?amount=10&category=9&type=multiple';
+const URL = 'https://opentdb.com/api.php?amount=10&category=18&type=multiple';
 var questions = [];
 
 function shuffle(sourceArray) {
