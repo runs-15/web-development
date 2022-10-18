@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        Pilih metode pembayaran
+        <form>
+            <input type="radio" name="v" id="cod" onclick="display()">Cash on Delivery</input> </br>
+            <input type="radio" name="v" id="shopeepay" onclick="display()">ShoopePay</input>
+
+        </form>
+        </br>
+        Nominal yang harus dibayarkan:
+        <table>
+            <tr>
+                <td>
+                    Belanja:
+                </td>
+                <td>
+                    <span id="asli">0</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Ongkir: 
+                </td>
+                <td>
+                    <span id="ongkir">0</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Diskon:
+                </td>
+                <td>
+                    <span id="diskon">0</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Total: 
+                </td>
+                <td>
+                    <span id="total">0</span>
+                </td>
+            </tr>
+        </table>
+        <script>
+            var ongkir = Math.floor((Math.random() * 10000) + 10000);
+            document.getElementById("ongkir").innerHTML = "Rp"+ongkir;
+
+            var asli = prompt("masukkan nominal belanja anda! ", 0);
+            document.getElementById("asli").innerHTML = asli;
+
+            var diskon = (asli >= 35000)? 0.4 * asli: harga;
+
+            function display(){
+                if(document.getElementById("shopeepay").checked) {
+                    document.getElementById("ongkir").innerHTML = 0;
+                } else {
+                    document.getElementById("ongkir").innerHTML = ongkir;
+                }
+            }
+
+
+        </script>
+    </body>
+</html>
